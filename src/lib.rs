@@ -1,4 +1,4 @@
-#![cfg_attr(target_arch = "bpf", no_std, no_builtins)]
+#![cfg_attr(target_arch = "bpf", no_std)]
 
 use pinocchio::{AccountView, Address, ProgramResult, no_allocator, nostd_panic_handler, program_entrypoint};
 
