@@ -1,3 +1,6 @@
+[unstable]
+build-std = ["core", "alloc"]
+
 [target.bpfel-unknown-none]
 rustflags = [
 "--cfg", "feature=\"mem_unaligned\"",
@@ -10,4 +13,4 @@ rustflags = [
 "-C", "link-arg=--disable-expand-memcpy-in-order",
 ]
 [alias]
-build-bpf = "build -Z build-std=core,alloc --release --target bpfel-unknown-none"
+build-bpf = "build --release --target bpfel-unknown-none"
