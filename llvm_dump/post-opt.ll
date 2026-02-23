@@ -450,7 +450,7 @@ declare void @llvm.lifetime.end.p0(i64 immarg, ptr captures(none)) #1
 ; Function Attrs: nounwind memory(none)
 declare i8 @llvm.bpf.passthrough.i8.i8(i32, i8) #3
 
-attributes #0 = { nofree norecurse nosync nounwind memory(read, inaccessiblemem: readwrite) "target-cpu"="generic" }
+attributes #0 = { nofree norecurse nosync nounwind memory(read, inaccessiblemem: readwrite) "target-cpu"="v3" }
 attributes #1 = { mustprogress nocallback nofree nosync nounwind willreturn memory(argmem: readwrite) }
 attributes #2 = { mustprogress nocallback nofree nosync nounwind willreturn memory(inaccessiblemem: readwrite) }
 attributes #3 = { nounwind memory(none) }

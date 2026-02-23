@@ -432,7 +432,7 @@ declare void @llvm.experimental.noalias.scope.decl(metadata) #2
 ; Function Attrs: nocallback nofree nosync nounwind willreturn memory(argmem: readwrite)
 declare void @llvm.lifetime.end.p0(i64 immarg, ptr captures(none)) #1
 
-attributes #0 = { nofree norecurse nosync nounwind memory(read, inaccessiblemem: readwrite) "target-cpu"="generic" }
+attributes #0 = { nofree norecurse nosync nounwind memory(read, inaccessiblemem: readwrite) "target-cpu"="v3" }
 attributes #1 = { nocallback nofree nosync nounwind willreturn memory(argmem: readwrite) }
 attributes #2 = { nocallback nofree nosync nounwind willreturn memory(inaccessiblemem: readwrite) }
 
